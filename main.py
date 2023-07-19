@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import pprint
 
 """
     Script para extraer algunas mediciones climáticas por hora, otras por día
@@ -74,7 +73,7 @@ def descargar_ciudad_entre_fechas(
         return {}
 
 
-def procesar_resultados_clima(
+def procesar_resultados(
         city_id, resultados_ciudad: dict) -> dict:
     """
     Procesa los resultados del api https://archive-api.open-meteo.com/v1/archive
@@ -112,7 +111,7 @@ def descargar_todas_ciudades_entre_fechas_procesado(
     resultados = {}
     for city_id, city_dict in CIUDADES.items():
         resultados_crudos = descargar_ciudad_entre_fechas(city_dict, start_date, end_date)
-        resultados_procesados = procesar_resultados_clima(city_id, resultados_crudos)
+        resultados_procesados = procesar_resultados(city_id, resultados_crudos)
 
         resultados[city_id] = resultados_procesados
 

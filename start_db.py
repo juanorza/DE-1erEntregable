@@ -1,10 +1,4 @@
 from sqlalchemy import create_engine
-import psycopg2
-
-# psycopg._encodings._py_codecs["UNICODE"] = "utf-8"
-# psycopg._encodings.py_codecs.update(
-#     (k.encode(), v) for k, v in psycopg._encodings._py_codecs.items()
-# )
 
 user = 'orza_juan_coderhouse'
 password = '0p1ZpL3p3x'
