@@ -1,5 +1,8 @@
 # DE-1erEntregable
 
+![image](https://github.com/juanorza/DE-1erEntregable/assets/68288013/9e2fe0cc-81c5-4912-8fef-0df3456097ca)
+
+
 El entregable consiste de dos scripts, que se ejecutan por separado.
 
 El script `main.py` descarga información del clima de algunas ciudades a través del API https://open-meteo.com/
